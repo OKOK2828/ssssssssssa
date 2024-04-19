@@ -1,0 +1,122 @@
+<!DOCTYPE html>     
+<html lang="en">  <!-- HTML comment -->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- code for favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <link rel="stylesheet" type="text/css" href="halving.css"  /> 
+        
+        <!-- defer loads html first then JS -->
+        <script defer type="text/javascript" src="halving.js"></script>
+
+        <title>Bitcoin Halving Countdown </title>    
+    </head>
+
+    <body>     
+
+        <div class="frame">
+
+            <header>
+              <a href="https://pump.fun/">
+                <button id="topButton">Buy on pump.fun</button>
+            </a>
+                <h1>
+                    <span class="banner">The</span> <br> 
+                    <span id="bitcoin">Bitcoin $Halving</span> 
+                    <a href="https://github.com/DanCQ" target="_blank">
+                        <img src="assets/bitcoin-logo.png" /> <br> 
+                    </a>
+                    <span class="banner">Countdown</span>
+                </h1>
+
+                <hr>
+                <h2>Tracking The Bitcoin Halving $Halving</h2>
+                <hr>
+            </header>
+            
+            <!-- top ten currency ticker -->
+            <div class="coinlore-priceticker-widget" data-mcurrency="usd"></div>
+
+            <img class="background-img" draggable="false" src="assets/bitcoin.png" />  
+            
+            <main>
+                
+                <ul class="half">
+                    <span class="label">
+                        Time Remaining
+                    </span>
+                    <li>
+                        <span id="time-estimate"></span>
+                    </li>
+                </ul>
+
+                <ul class="half">
+                    <span class="label">
+                        Halving Date
+                    </span>
+                    <li>
+                        <span id="halving-date"></span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <span class="label">
+                        Current Block Height
+                    </span>
+                    <li>
+                        <span id="current-block-height"></span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <span class="label">
+                        The Halving Block
+                    </span>
+                    <li>
+                        <span id="halving-block"></span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <span class="label">
+                        Blocks Remaining
+                    </span>
+                    <li>
+                        <span id="remaining-blocks"></span>
+                    </li>
+                </ul>
+
+                             
+                <ul class="half">
+                    <span class="label">
+                        Biggest Transaction
+                    </span>
+                    <li>
+                        <span id="maxTransaction"></span>
+                    </li>
+                </ul>                
+                
+                <ul class="half">
+                    <span class="label">
+                        Smallest Transaction
+                    </span>
+                    <li>
+                        <span id="minTransaction"></span>
+                    </li>
+                </ul>
+
+            </main>
+        
+        </div>        
+
+   
+    </body>
+
+</html>
